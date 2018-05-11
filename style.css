@@ -508,8 +508,8 @@ footer p {
     }
 }
 
-/* Breakpoint 320px */
-@media screen and (max-width: 320px) {
+/* Breakpoint 360px */
+@media screen and (max-width: 360px) {
     .logo {
         margin: 15px 0px 0px 10px;
     }

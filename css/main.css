@@ -1,0 +1,1158 @@
+/* Fonts */
+@font-face {
+  font-family: 'Bodoni SvtyTwo ITC TT';
+  src: url(fonts/Bodoni-SvtyTwo-ITC-TT-Book.ttf);
+}
+
+/* Global styles */
+body {
+  background: #d9d9d9;
+  color: #626262;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #57614e;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 2.1em;
+}
+
+h3 {
+  font-size: 1.38em;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: underline;
+  color: #626262;
+}
+
+a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+p {
+  hyphens: manual;
+  -moz-hyphens: manual;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+}
+
+.btn.btn-default {
+  background: #727272;
+  background: -moz-linear-gradient(top, #727272 0%, #5b5b5b 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #727272), color-stop(100%, #5b5b5b));
+  background: -webkit-linear-gradient(top, #727272 0%, #5b5b5b 100%);
+  background: -o-linear-gradient(top, #727272 0%, #5b5b5b 100%);
+  background: -ms-linear-gradient(top, #727272 0%, #5b5b5b 100%);
+  background: linear-gradient(to bottom, #727272 0%, #5b5b5b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#5b5b5b', GradientType=0 );
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.83em;
+}
+
+.header-wrapper,
+.banner-wrapper,
+.promise-wrapper,
+.additional-wrapper,
+.footer-wrapper,
+.about-us-wrapper,
+.practices-wrapper,
+.news-wrapper,
+.contact-wrapper {
+  width: 100%;
+  border: 1.5px solid #fff;
+  border-right: none;
+  border-left: none;
+}
+
+input.form-control,
+textarea.form-control {
+  border-radius: 0;
+  border: 1px solid #6c6c6c;
+}
+
+input.form-control {
+  height: 27px;
+}
+
+/* Header section */
+.header-wrapper {
+  background: #57614e;
+  box-shadow: inset 0 -3px 10px -5px #000;
+  border-right: none;
+  border-left: none;
+  height: 154px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.header-content header {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 50px;
+}
+
+.header-content header .logo img {
+  padding-bottom: 30px;
+}
+
+.header-content header #hamburger {
+  display: none;
+}
+
+.header-content header label {
+  float: right;
+}
+
+.header-content header .hamburger {
+  width: 45px;
+  height: 45px;
+  background: #616b57;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2.2em;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  padding-top: 6px;
+}
+
+.header-content .logo {
+  display: inline-block;
+}
+
+.header-content .logo-text {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.header-content .logo-text p {
+  color: #fff;
+  text-shadow: 1px 1px 1px 1px #000;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #fff 60%, #545e4a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.header-content .logo-text p:first-child {
+  font-family: 'Caudex', serif;
+  font-size: 1.75em;
+}
+
+@media screen and (max-width: 445px) {
+  .header-content .logo-text p:first-child {
+    width: 125px;
+    font-size: 1.3em;
+    margin-left: -5px;
+  }
+}
+
+.header-content .logo-text p:last-child {
+  font-family: 'Bodoni SvtyTwo ITC TT', serif;
+  font-size: 0.9em;
+  text-align: center;
+  letter-spacing: 3.8px;
+}
+
+@media screen and (max-width: 445px) {
+  .header-content .logo-text p:last-child {
+    display: none;
+  }
+}
+
+header nav {
+  height: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  header nav {
+    height: 80px;
+    float: right;
+    margin-top: -10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header nav {
+    margin-top: 22px;
+  }
+}
+
+header nav ul {
+  list-style: none;
+  background: #57614e;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  header nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header nav ul {
+    flex-wrap: nowrap;
+    width: auto;
+  }
+}
+
+header nav ul li {
+  padding: 10px 17.5px;
+}
+
+header nav ul li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a {
+  color: #b8c6ac;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  header nav ul li:last-child {
+    padding-right: 0;
+  }
+}
+
+header nav ul .dropdown {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  header nav ul .dropdown {
+    position: absolute;
+    background: #888888;
+    display: none;
+  }
+}
+
+header nav ul .dropdown a {
+  color: #fff;
+  font-size: 0.8em;
+  text-shadow: none;
+}
+
+header nav ul .dropdown li {
+  padding: 5px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  header nav ul .news-menu:hover > .dropdown {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header nav ul .practices-menu:hover > .dropdown {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header input[type="checkbox"]:checked + nav {
+    height: 360px;
+    position: absolute;
+    z-index: 10;
+    transition: height 2s;
+    width: 100%;
+  }
+}
+
+/* Banner section */
+.banner-wrapper {
+  background: #d9d9d9;
+}
+
+.banner-wrapper .banner-content {
+  padding-right: 0;
+  padding-left: 0;
+  background: #e9e9e9;
+  border: 1px solid #fff;
+  margin-top: 15px;
+}
+
+.banner-wrapper .banner-content .banner-text {
+  padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-wrapper .banner-content .banner-text {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-wrapper .banner-content .banner-text {
+    padding-top: 90px;
+    padding-left: 22px;
+  }
+}
+
+.banner-wrapper .banner-content .banner-text p {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #57614e;
+  font-size: 2.05em;
+}
+
+.banner-wrapper .banner-content .banner-text p:last-child {
+  font-size: 1.8em;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-wrapper .banner-content .banner-text p:last-child {
+    width: 200px;
+    margin-left: 92px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-wrapper .banner-content .banner-text p:first-child {
+    margin-bottom: 7px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-wrapper .banner-content .banner-text p:nth-child(even) {
+    margin-bottom: 5px;
+  }
+}
+
+.banner-wrapper .banner-content .banner-image {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-wrapper .banner-content .banner-image {
+    margin-left: -34px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-wrapper .banner-content .banner-image img {
+    max-width: 100%;
+  }
+}
+
+/* Manes Winchester Promise+testimonials section */
+.promise-wrapper {
+  background: #e4e4e4;
+}
+
+.promise-wrapper .promise-content {
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 29px;
+}
+
+.promise-wrapper .promise-content p {
+  line-height: 24px;
+}
+
+.promise-wrapper .promise-content .testimonials {
+  padding-left: 30px;
+}
+
+.promise-wrapper .promise-content .testimonials h3 {
+  margin: 32px 0 26px 0;
+}
+
+.promise-wrapper .promise-content .testimonials p:last-child {
+  padding-right: 18px;
+}
+
+.promise-wrapper .promise-content .promise h1 {
+  text-transform: capitalize;
+  margin: 20px 0 26px 0;
+}
+
+.testimonials p:last-child {
+  text-align: right;
+  margin-top: -8px;
+}
+
+/* Why choose us? section */
+.why-us-wrapper {
+  background: #e2e2e2;
+}
+
+.why-us-wrapper .why-us-content {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 11px;
+  padding-bottom: 26px;
+}
+
+.why-us-wrapper .why-us-content h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .why-us-wrapper .why-us-content h3 {
+    text-align: left;
+  }
+}
+
+.why-us-wrapper .why-us-content figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .why-us-wrapper .why-us-content figure {
+    align-items: flex-start;
+  }
+}
+
+.why-us-wrapper .why-us-content figure h4 {
+  padding: 13px 0 0 5px;
+}
+
+.why-us-wrapper .why-us-content figure p {
+  line-height: 24px;
+  padding: 0 0 0 5px;
+  max-width: 240px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .why-us-wrapper .why-us-content figure p {
+    text-align: left;
+  }
+}
+
+.why-us-wrapper .why-us-content figure a {
+  margin-left: 5px;
+}
+
+/* About section */
+.about-us-wrapper .about-us-content {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-wrapper .about-us-content {
+    padding-bottom: 62px;
+  }
+}
+
+.about-us-wrapper .about-us-content h2 {
+  margin: 37px 0 10px 0;
+}
+
+.about-us-wrapper .about-us-content img {
+  margin-bottom: 30px;
+}
+
+.about-us-wrapper .about-us-content h3 {
+  margin-bottom: 5px;
+}
+
+.about-us-wrapper .about-us-content p {
+  line-height: 24px;
+}
+
+.about-us-wrapper .about-us-content section p {
+  margin-bottom: 25px;
+}
+
+/* Practices */
+.practices-wrapper .practices-content {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 18px;
+}
+
+.practices-wrapper .practices-content p {
+  line-height: 24px;
+}
+
+.practices-wrapper .practices-content h2 {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .practices-wrapper .practices-content aside {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .practices-wrapper .practices-content aside {
+    padding-bottom: 557px;
+  }
+}
+
+.practices-wrapper .practices-content aside .practices-map ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.practices-wrapper .practices-content aside .practices-map ul li {
+  padding: 7px 0 20px 0;
+  border: 1px dotted #fff;
+  border-left: none;
+  border-right: none;
+}
+
+.practices-wrapper .practices-content aside .practices-map ul li a {
+  color: #755c02;
+  text-decoration: none;
+}
+
+.practices-wrapper .practices-content aside .practices-map ul li a:hover {
+  color: #57614e;
+}
+
+@media screen and (min-width: 992px) {
+  .practices-wrapper .practices-content aside .testimonials {
+    padding-top: 11px;
+    padding-right: 23px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .practices-wrapper .practices-content .practices {
+    padding-left: 30px;
+  }
+}
+
+.practices-wrapper .practices-content .practices .practices-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .practices-wrapper .practices-content .practices .practices-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.practices-wrapper .practices-content .practices .practices-icons a:hover figure p {
+  background: #393939;
+  transition: 1s;
+}
+
+.practices-wrapper .practices-content .practices .practices-icons figure {
+  display: inline-block;
+  position: relative;
+  color: #e2e2e2;
+  margin-bottom: 30px;
+}
+
+.practices-wrapper .practices-content .practices .practices-icons figure p {
+  position: absolute;
+  bottom: 4.6%;
+  left: 3.2%;
+  width: 94.4%;
+  padding: 10px 0;
+  text-align: center;
+  background: #696969;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-size: 1.35em;
+}
+
+@media screen and (min-width: 1200px) {
+  .practices-wrapper .practices-content .practices .practices-icons .prenuptial-agreement {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .practices-wrapper .practices-content .practices .practices-icons .marriage {
+    margin-left: 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .practices-details {
+    padding-left: 30px;
+  }
+}
+
+.practices-details p {
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.practices-details img {
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  aside {
+    padding-top: 8px;
+    border-right: 1px dotted #fff;
+  }
+}
+
+aside h3 {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px dotted #fff;
+}
+
+aside .testimonials
+h3 {
+  margin-top: 32px;
+}
+
+aside p:nth-child(2) {
+  padding-top: 5px;
+}
+
+/* Our Lawyers */
+.our-lawyers-content {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 18px;
+}
+
+.our-lawyers-content p {
+  line-height: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content aside {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-lawyers-content aside {
+    padding-bottom: 420px;
+  }
+}
+
+.our-lawyers-content aside p {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content aside p {
+    padding-right: 20px;
+  }
+}
+
+.our-lawyers-content aside .testimonials h3 {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content aside .testimonials h3 {
+    margin-top: 48px;
+  }
+}
+
+.our-lawyers-content aside .testimonials {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content aside .testimonials p:nth-child(2) {
+    padding-right: 23px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content aside .testimonials p:nth-child(3) {
+    margin-top: -23px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-lawyers-content .our-lawyers {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.our-lawyers-content .our-lawyers h2 {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content .our-lawyers h2 {
+    padding-left: 30px;
+  }
+}
+
+.our-lawyers-content .our-lawyers h3 {
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content .our-lawyers h3 {
+    padding-left: 30px;
+  }
+}
+
+.our-lawyers-content .our-lawyers h3:nth-child(5), .our-lawyers-content .our-lawyers h3:nth-child(7) {
+  margin-top: -12px;
+  border-top: 1px dotted #fff;
+  padding-top: 19px;
+}
+
+.our-lawyers-content .our-lawyers article {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 992px) {
+  .our-lawyers-content .our-lawyers article {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+}
+
+.our-lawyers-content .our-lawyers article h4 {
+  padding-top: 14px;
+}
+
+.our-lawyers-content .our-lawyers article img {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+/* News */
+.news-content {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 42px;
+}
+
+.news-content p {
+  line-height: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .news-content aside {
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .news-content aside {
+    padding-bottom: 425px;
+  }
+}
+
+.news-content aside h3 {
+  margin-top: -4px;
+}
+
+.news-content aside p {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .news-content aside p {
+    padding-right: 20px;
+  }
+}
+
+.news-content aside .testimonials {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .news-content aside .testimonials p:nth-child(2) {
+    padding-right: 23px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .news-content aside .testimonials p:nth-child(3) {
+    margin-top: -23px;
+  }
+}
+
+.news-content .news {
+  padding-right: 0;
+  padding-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .news-content .news {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+}
+
+.news-content .news h2 {
+  margin-top: -4px;
+  margin-bottom: 14px;
+}
+
+.news-content .news figure {
+  background: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .news-content .news figure {
+    text-align: left;
+    height: 300px;
+    margin-right: 15px;
+    padding: 0;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .news-content .news figure {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .news-content .news figure {
+    height: 258px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .news-content .news figure a {
+    float: right;
+    margin-top: 10px;
+  }
+}
+
+.news-content .news figure .posted {
+  padding-top: 15px;
+  font-size: 0.87em;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .news-content .news figure .posted {
+    padding-top: 35px;
+  }
+}
+
+.news-content .news figure h3 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .news-content .news figure h3 {
+    margin-bottom: 27px;
+  }
+}
+
+.news-content .news figure img {
+  padding-top: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .news-content .news figure img {
+    float: left;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .news-content .news-details {
+    padding-right: 0;
+    padding-left: 0;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .news-content .news-details {
+    padding-left: 30px;
+  }
+}
+
+.news-content .news-details h2 {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.news-content .news-details p {
+  font-size: 0.93em;
+}
+
+@media screen and (min-width: 1200px) {
+  .news-content .news-details p {
+    margin-bottom: 25px;
+  }
+}
+
+.news-content .news-details .posted {
+  font-size: 0.8em;
+  margin-bottom: 25px;
+}
+
+.news-content .news-details img {
+  float: left;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 445px) {
+  .news-content .news-details img {
+    float: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .news-content .news-details img {
+    padding-bottom: 200px;
+  }
+}
+
+.shadow {
+  position: relative;
+}
+
+.shadow:before, .shadow:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #b8b8b8;
+  box-shadow: 0 15px 10px #b8b8b8;
+  transform: rotate(-3deg);
+}
+
+.shadow:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/* Contact page */
+.contact-content {
+  padding: 42px 0 50px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-content {
+    padding-bottom: 0;
+  }
+}
+
+.contact-content p {
+  line-height: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-content aside {
+    padding-bottom: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-content aside {
+    padding-bottom: 712px;
+  }
+}
+
+.contact-content aside h3 {
+  margin-top: -4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-content aside h4, .contact-content aside p {
+    padding-left: 30px;
+  }
+}
+
+.contact-content aside h4 {
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 1.36em;
+  margin: 7px 0 0 0;
+  padding-right: 60px;
+  line-height: 24px;
+}
+
+.contact-content aside p {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-content .contact-form {
+    padding-right: 0;
+    padding-left: 0;
+    padding: 0 10px 0 30px;
+  }
+}
+
+.contact-content .contact-form h2 {
+  margin-top: -4px;
+}
+
+.contact-content .contact-form h3 {
+  margin: 25px 0 3px 0;
+}
+
+.contact-content .contact-form form {
+  margin-top: 27px;
+}
+
+.contact-content .contact-form form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-content .contact-form .btn.btn-default {
+  height: 40px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-content .contact-form .btn.btn-default {
+    width: 210px;
+  }
+}
+
+/* Additional information */
+.additional-wrapper {
+  background: #d9d9d9;
+}
+
+.additional-wrapper .additional-content {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.additional-wrapper .additional-content p {
+  line-height: 24px;
+  font-size: 0.935em;
+}
+
+.additional-wrapper .additional-content .contact-us, .additional-wrapper .additional-content .lateset-news, .additional-wrapper .additional-content .send-message {
+  padding: 10px 30px 15px 30px;
+}
+
+.additional-wrapper .additional-content .contact-us p, .additional-wrapper .additional-content .lateset-news p, .additional-wrapper .additional-content .send-message p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .additional-wrapper .additional-content .contact-us, .additional-wrapper .additional-content .lateset-news, .additional-wrapper .additional-content .send-message {
+    padding: 26px 30px 36px 30px;
+  }
+}
+
+.additional-wrapper .additional-content .send-message a.btn.btn-default {
+  padding: 10px 24px 10px 24px;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .additional-wrapper .additional-content .contact-us {
+    border-right: 1px solid #c1c1c1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .additional-wrapper .additional-content .contact-us {
+    border-left: 1px solid #c1c1c1;
+  }
+}
+
+/* Footer */
+.footer-wrapper {
+  background: #57614e;
+}
+
+.footer-wrapper .footer-content footer {
+  padding: 13px 0;
+}
+
+.footer-wrapper .footer-content footer p {
+  color: #fff;
+  font-size: 0.828em;
+  float: right;
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+.social-media {
+  float: left;
+}
+
+.social-media div {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(../imgs/social-media.png);
+  margin-right: 4px;
+}
+
+.social-media .facebook {
+  background-position: 0 0;
+}
+
+.social-media .twitter {
+  background-position: -24px 0;
+}
+
+.social-media .google-plus {
+  background-position: -47px 0;
+}
+
+.social-media .pinterest {
+  background-position: -71px 0;
+}
+/*# sourceMappingURL=main.css.map */
